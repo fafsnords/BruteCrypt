@@ -1,6 +1,6 @@
 # BruteCrypt
 ### Introduction
-**brutecrypt** is a command tool to bruteforce the hash
+**brutecrypt** is an offline command tool to bruteforce the hash value
 
 ### Installation
 ```

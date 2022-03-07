@@ -84,7 +84,6 @@ class crack_hash:
           SHA1_hash = open("SHA-1.txt", "r")
           SHA256_hash = open("SHA-256.txt", "r")
           SHA512_hash = open("SHA-512.txt", "r")
-          CRC32_hash = open("CRC-32.txt", "r")
 
           print(banner)
 

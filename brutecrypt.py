@@ -63,23 +63,7 @@ class crack_hash:
             break
           else:
             time.sleep(1)
-            print("\033[2;38mChecking  |  {0}  |  \033[2;31mNot Found".format(passwd.strip()))
-
-   # duplicated function for crc32
-   def CRC32(self, CRC32_hash):
-       print("\n\033[2;34mCRC-32 Hash Detected...\n")
-
-       # iterate the crc32 and default passwords
-       for passwd,crc32 in zip(self.default_passwords.readlines(), CRC32_hash.readlines()):
-
-          # check if the value is matched
-          if self.hash_value == crc32.strip():
-            print("\n\033[2;38mChecking  |  {0}  |  \033[2;32mFound".format(passwd.strip()))
-            break
-          else:
-            time.sleep(1)
-            print("\033[2;38mChecking  |  {0}  |  \033[2;31mNot Found".format(passwd.strip()))
-
+            print("\033[2;38mChecking  |  {0}  |  \033[2;31mNot Found".format(passwd.strip())
    class hash_set:
       def execute(self):
 
@@ -127,10 +111,6 @@ class crack_hash:
             # check if hash is 128 length execute the sha512 function
             elif len(hash_value) == 128:
               start.SHA512(SHA512_hash)
-
-            # check if hash is 8 length excute the crc32 function
-            elif len(hash_value) == 8:
-              start.CRC32(CRC32_hash)
             else:
               print("\n\033[2;31mHash not identified...")
 

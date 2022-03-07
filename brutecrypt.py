@@ -63,7 +63,7 @@ class crack_hash:
             break
           else:
             time.sleep(1)
-            print("\033[2;38mChecking  |  {0}  |  \033[2;31mNot Found".format(passwd.strip())
+            print("\033[2;38mChecking  |  {0}  |  \033[2;31mNot Found".format(passwd.strip()))
    class hash_set:
       def execute(self):
 

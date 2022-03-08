@@ -80,10 +80,10 @@ class crack_hash:
 
           # file for hash and default passwords to implement in duplicated functions and object
           default_passwords = open("password.txt", "r")
-          MD5_hash = open("MD5.txt", "r")
-          SHA1_hash = open("SHA-1.txt", "r")
-          SHA256_hash = open("SHA-256.txt", "r")
-          SHA512_hash = open("SHA-512.txt", "r")
+          MD5_hash = open("value/MD5.txt", "r")
+          SHA1_hash = open("value/SHA-1.txt", "r")
+          SHA256_hash = open("value/SHA-256.txt", "r")
+          SHA512_hash = open("value/SHA-512.txt", "r")
 
           print(banner)
 
